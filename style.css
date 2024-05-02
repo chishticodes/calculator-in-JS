@@ -1,0 +1,16 @@
+*::after,
+*::before,
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(145deg, rgb(137, 137, 176), rgb(42, 47, 43) 40%, rgb(58, 51, 51));
+}
+
