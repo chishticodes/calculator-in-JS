@@ -1,10 +1,15 @@
 let input = document.getElementById('input-box');
 let buttons = document.querySelectorAll('button');
+let decimalBtn = document.querySelector('.decimal-btn');
+
 
 let string = "";
 let arr = Array.from(buttons);
 arr.forEach(button => {
     button.addEventListener('click', (e) =>{
+        if(e.target.innerHTML == '.' && string.includes('.')){
+            return;
+        }
         if(e.target.innerHTML == '='){
             string = eval(string);
             input.value = string;
